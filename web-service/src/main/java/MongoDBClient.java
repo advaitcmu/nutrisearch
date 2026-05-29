@@ -15,7 +15,8 @@ import org.bson.Document;
 
 public class MongoDBClient {
 
-  private static final String CONNECTION_STRING = "mongodb+srv://admin:changeme@ds-project-4.qbzgxky.mongodb.net/?appName=ds-project-4";
+//  TODO: Add connection string
+  private static final String CONNECTION_STRING = "";
   private static final String DATABASE_NAME = "food_search";
   private static final String COLLECTION_NAME = "logs";
 
