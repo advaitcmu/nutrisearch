@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🥗 NutriSearch"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#2e7d32"
+        android:layout_marginTop="48dp"
+        android:layout_marginBottom="8dp"/>
+
+    <!-- Subtitle -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search any food to see its nutrition info"
+        android:textSize="14sp"
+        android:textColor="#888888"
+        android:layout_marginBottom="40dp"/>
+
+    <!-- Search Input -->
+    <EditText
+        android:id="@+id/editTextSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="e.g. chicken, oats, banana..."
+        android:inputType="text"
+        android:padding="12dp"
+        android:background="@drawable/edittext_border"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Search Button -->
+    <Button
+        android:id="@+id/buttonSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:backgroundTint="#2e7d32"
+        android:textColor="#ffffff"
+        android:padding="12dp"/>
+
+</LinearLayout>

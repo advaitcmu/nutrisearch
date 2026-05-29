@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fitsSystemWindows="true"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5f5f5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Product Image -->
+        <ImageView
+            android:id="@+id/imageViewDetail"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:scaleType="centerCrop"
+            android:background="#e0e0e0"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Product Name -->
+            <TextView
+                android:id="@+id/textViewDetailName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product Name"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:textColor="#222222"/>
+
+            <!-- Brand -->
+            <TextView
+                android:id="@+id/textViewDetailBrand"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Brand"
+                android:textSize="15sp"
+                android:textColor="#888888"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="8dp"/>
+
+            <!-- Nutriscore -->
+            <TextView
+                android:id="@+id/textViewNutriscore"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nutriscore: A"
+                android:textSize="14sp"
+                android:textColor="#ffffff"
+                android:background="#2e7d32"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="4dp"
+                android:layout_marginBottom="20dp"/>
+
+            <!-- Nutrition Section Header -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nutrition per 100g"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="#2e7d32"
+                android:layout_marginBottom="12dp"/>
+
+            <!-- Nutrition Card -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#ffffff"
+                android:padding="16dp">
+
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowCalories"/>
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowProtein"/>
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowFat"/>
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowCarbs"/>
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowSugar"/>
+                <include layout="@layout/item_nutrition_row"
+                    android:id="@+id/rowSodium"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
